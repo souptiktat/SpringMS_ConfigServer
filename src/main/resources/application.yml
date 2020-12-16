@@ -1,0 +1,40 @@
+server:  port: 1111
+spring:
+  application:
+    name: ConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@bitbucket.org:souptiktat/infytel-config.git        #         search-paths: '{application}'
+          clone-on-start: true
+          ignore-local-ssh-settings: true
+          passphrase: 
+          private-key: |
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIEpgIBAAKCAQEA2zxDAORYEV7BVpJtoNbG99HbqweDfO6FBCxVFcbZCVLbwuKi
+            zvqMshRkoMoFzn4rZr+Rfp4AGk5Fz/at+OhbqNpIL4S+FMHPT6lAK/tO8VVP0JX4
+            hfxzI35zU5WcsmzV2OG0d7DIV0LBBVLtTIO7UBgxYq/KvWxTd8XtNKC0rUYAxkTR
+            Gf0ikUagvtf9ON3e/OU2ci3LFwmonENO++SCpDHVxyFTNInsYnYQm0DBOJxQJwHh
+            /sOPhSlWGkKFgRVBmY7TaHLVf7imzxxjUFryyglhCF59hBOTuyGZBxsf52xzeOMN
+            gStFWujGzeA4XrY5jZLgQn1EH0f+FBiUrTYomwIDAQABAoIBAQCvegSHaj2zaYyG
+            pp1o54BKS4bv1gvAq4l8VZ+k1oxRkiikTJLT6GdFAl2o9QrAxOwoSZ1DI2QhqhTm
+            6CNH33O+KzksD6u1IYu1z1q12WjOceJ4qhFJ7U6bUlMsy8uoZMSl28J/KtiwP5YP
+            lNirLaV37mVZACvegh4s+Bds0FTNeoZpbcxX7HOIV66h2e8rbEzj3wnIvhoHEJdL
+            YqFGMk/br33NBIN+p6sMo+NLbPQ5hW0esRvrtnkmlnSdVUiTSjXYO7yp5yq31xFk
+            Wc8M9GV3c2kYxqUmD5Vk7gWkr3Gzm5sYJA+pq98uZaCpjGDVAquV7bwIuyQuUsbU
+            AkoIaE2BAoGBAP4BQUfhYbN35wWhiKblCVZ82iO7rljnJ1EsoffY60HS2mvqJGKt
+            HWAUbCaWZMSPU8rYOx7+3Q0UoCo4rdQlqcX9t2WZyKdCIqVInYIGcTm4rRCrY6Oa
+            7Do3KoEmqUO0InLVdtJELq8tozHnhFQ+q9UC5MX90xvCU5R6MbeEF2d5AoGBANz1
+            F+NNfaq7dg9p8nNjRiUFCn+4S1mkr447Yd+9zDU7YiSUjaqqvedejwxrJhdBqDhL
+            21z/a5SvyUNdudUJ9tGvWtw68wLKmQuU4ve+ee7jZ1I3gCbNDypolHXCl3c44p/9
+            k1BLBk3SC6/D0i1wkVHgaRD70N0VH0F4v97JiIezAoGBAJocgtIs8g1ku1uURYgV
+            QNQjzmqNzduM7DL5JJBvIVX/q5x8JHVmWYNZAMFs0FjeKVXSWhSVR+NO11qmpvkn
+            nNlO9f4ED1VD8CdeZopkhEAkR4Tsp/i034z2uahAn8Q/QANydrRewABzbSezM3u1
+            xqXoKoviVDrsba+RcCbLUzPpAoGBAJ5mPfe/Z6VruhkWtK6vrmt/j6U78xiSjSAD
+            xghlwe0vYw4iSOTefkFNcnNOpQHrGbMx/lJO8UqoMjpPCJeHCyAK+7IBuJB5uPmq
+            hINiU3tEHp+8Fey6+HJIgpVhKMBZUW2slVzsS9qiB6q7UQMuPZ9apzd7rqGvMLb4
+            32PRSkUtAoGBAPxPHRdBWFXfa70lPvOoars1Y5u2yGnyha0xUIjkJmlgWYYkqcq0
+            wsSkq8g0PicBM4EFZ7GobzEqYrG06dRB9BNjHWYMazL/hZFomJyL8GCXn4WMOVPC
+            4h4RJ6zYv3z+STcNSmu1UHnUxSO2RIfpHSYU9wlkcQmz6Wt1o2t+I71R
+            -----END RSA PRIVATE KEY-----
